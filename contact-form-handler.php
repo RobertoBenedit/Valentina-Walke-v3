@@ -3,7 +3,7 @@ $name =  $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
-$email_from = '...';
+$email_from = 'https://robertobenedit.github.io/Valentina-Walke-v3/';
 
 $email_subject = "llego una nueva solicitud";
 
@@ -21,5 +21,3 @@ $headers .= "Reply-To: $visitor_email \r\n";
 mail($to, $email_subject, $email_body, $headers);
 
 header("Location: index.html");
-
-?>
